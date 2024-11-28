@@ -1,0 +1,103 @@
+/* Section Title */
+.projects .title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Carousel and Card Styling */
+.projects .carousel {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects .card {
+  background: linear-gradient(135deg, #1e1e2f, #3e4a61);
+  border-radius: 15px;
+  width: 280px; /* Fixed width */
+  height: 350px; /* Fixed height */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure equal spacing */
+}
+
+.projects .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.projects .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%; /* Box takes full card height */
+}
+
+/* Icon Styling */
+.icon-wrapper {
+  background: #ffffff20;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.projects .card:hover .icon-wrapper {
+  background: #ffffff40;
+}
+
+/* Project Title */
+.project-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Role Label */
+.role-label {
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Card Text */
+.projects .card p {
+  font-size: 0.85rem;
+  color: #ddd;
+  line-height: 1.5;
+  text-align: center;
+  overflow: hidden; /* Hide extra text if overflow */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Limit text to 5 lines */
+  -webkit-box-orient: vertical;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects .card {
+    width: 90%; /* Responsive width */
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects .title {
+    font-size: 2rem;
+  }
+}

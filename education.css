@@ -1,0 +1,58 @@
+
+
+.education {
+  padding: 50px 0;
+ background-color: #f0f8ff;
+   text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark grey text */
+}
+
+.education-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures cards are responsive */
+}
+
+.education-card {
+  width: 300px;
+  background-color: #f0f8ff; /* Light sky blue background for cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-box {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-box i {
+  font-size: 2.5rem;
+  color: #1e90ff; /* Dodger blue icon color */
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555; /* Medium grey text */
+  line-height: 1.5;
+}
