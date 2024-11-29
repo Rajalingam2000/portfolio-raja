@@ -274,105 +274,159 @@
     animation: pulsate 1s ease-in-out;
   }
   
-  /*  About  */
 .about {
-  background: radial-gradient(#e1efff, white);
-  padding: 50px 0;
+  background: linear-gradient(135deg, #e1efff 50%, white 50%);
+  padding: 50px 20px;
+}
+
+.about .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .about .title {
+  font-size: 28px;
+  color: #1e3551;
   text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
   position: relative;
 }
 
 .about .title::after {
-  content: "";
+  content: "— About My Journey —";
+  font-size: 16px;
+  color: #6c757d;
   position: absolute;
-  width: 60px;
-  height: 4px;
-  background-color: #1e3551;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5px;
+  width: 100%;
+  top: 40px;
+  text-align: center;
 }
 
 .about .about-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
 
-.about .column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about .left {
+.about .about-image {
   flex: 1;
   text-align: center;
-  padding: 20px;
 }
 
-.about .left img {
-  height: 350px;
-  width: 350px;
+.about .about-image img {
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  border: 5px solid #1e3551;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.about .left img:hover {
-  transform: scale(1.05);
-}
-
-.about .right {
+.about .about-text {
   flex: 2;
-  padding: 20px;
 }
 
-.about .right .text {
-  font-size: 28px;
+.about .about-text h3 {
+  font-size: 24px;
+  color: #1e3551;
   font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about .about-text h3 span {
+  color: #007bff;
+}
+
+.about .about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #495057;
   margin-bottom: 20px;
 }
 
-.about .right p {
-  line-height: 1.8;
-  font-size: 16px;
-  margin-bottom: 15px;
-  text-align: justify;
+.about .highlights h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e3551;
+  margin-bottom: 10px;
 }
 
-.about .right a {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
+.about .highlights ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about .highlights li {
   font-size: 16px;
+  line-height: 1.8;
+  color: #495057;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.about .highlights li::before {
+  content: "✔";
+  color: #007bff;
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.about a {
+  display: inline-block;
+  background: #1e3551;
   color: #fff;
-  background-color: #1e3551;
-  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 6px;
   text-decoration: none;
   transition: all 0.3s ease;
+  margin-top: 20px;
 }
 
-.about .right a:hover {
-  background-color: #fff;
+.about a:hover {
+  background: none;
   color: #1e3551;
   border: 2px solid #1e3551;
+  box-shadow: 0 0 10px #1e3551;
 }
 
-  /*  Skills  */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
 
-  /*  Projects  */
+  .about .about-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about .about-text {
+    margin-top: 20px;
+  }
+}
 
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about .column {
+    flex: 1 1 100%;
+  }
+}
 
   /*  Media Query  */
   @keyframes pulsate {
